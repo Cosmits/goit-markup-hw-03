@@ -166,16 +166,13 @@ body {
 
 /* =========== hero =========== */
 .hero {
+    padding-top: 192px;
+    padding-bottom: 192px;
 
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     background: var(--dark-navy-blue);
     text-align: center;
-}
-
-.hero .container {
-    padding-top: 192px;
-    padding-bottom: 192px;
 }
 
 .hero-title {
@@ -219,7 +216,7 @@ body {
 
 /* =========== Our skills =========== */
 
-.skills .container {
+.skills {
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -259,7 +256,7 @@ body {
 
 /* =========== What are we doing =========== */
 
-.projects .container {
+.projects {
     padding-bottom: 120px;
 }
 
@@ -291,12 +288,10 @@ body {
 
 /* =========== Our Team =========== */
 .teams {
-    background-color: var(--light-mode-backgrounds);
-}
-
-.teams .container {
     padding-top: 120px;
     padding-bottom: 120px;
+
+    background-color: var(--light-mode-backgrounds);
 }
 
 .teams-list {
@@ -314,20 +309,18 @@ body {
 }
 
 .team-card .card-content {
-    margin: 16px 32px;
-
+    padding: 32px;
+    padding-bottom: 32px;
     text-align: center;
 
 }
 
 /* =========== footer =========== */
 .footer {
-    background: var(--dark-navy-blue);
-}
-
-.footer .container {
     padding-top: 100px;
     padding-bottom: 100px;
+
+    background: var(--dark-navy-blue);
 }
 
 .footer-link-logo-2 {
@@ -342,8 +335,9 @@ body {
 
 /* =========== Portfolio  ===========*/
 
-.portfolio .container {
+.portfolio {
     padding-top: 96px;
+    padding-bottom: 120px;
 }
 
 .portfolio .skills-list {
@@ -352,7 +346,6 @@ body {
 
 .btn-portfolio {
     padding: 12px 24px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 
     font-family: 'Roboto', sans-serif;
@@ -371,6 +364,7 @@ body {
 .btn-portfolio:focus {
     color: var(--active-text-color);
     background-color: var(--primary-brand-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     line-height: 1.5;
 }
 
@@ -393,7 +387,7 @@ body {
 
 
 .post-content {
-    padding: 32px 0;
+    padding: 32px 16px;
     border-bottom: 1px solid var(--accent-color);
     border-left: 1px solid var(--accent-color);
     border-right: 1px solid var(--accent-color);
@@ -401,4 +395,17 @@ body {
 
 .portfolio-title {
     margin-bottom: 8px;
+
+    font-size: 20px;
+    line-height: calc(24/20);
+    letter-spacing: 0.02em;
+    color: var(--dark-navy-blue)
+}
+
+.portfolio-text {
+    font-size: 16px;
+    line-height: calc(24/16);
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color);
 }
